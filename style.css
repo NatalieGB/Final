@@ -413,6 +413,18 @@ li a:hover:after {
     color: #ff0157;
     font-weight: 500;
 }
+.copyright h3 {
+    font-size: 18px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.fa-brands {
+    margin-left: 5px;
+}
 
 .image {
     width: 100%;
