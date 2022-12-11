@@ -594,6 +594,11 @@ footer {
     .title {
         align-items: center;
     }
+    .menu .content .box {
+        padding: 5px;
+        margin: 5px;
+    }
+
 }
 
 
