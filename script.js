@@ -45,21 +45,21 @@ window.addEventListener('scroll', function (){
 let imageData = [
     {
         id: 1,
-        imageUrl: "https://c0.wallpaperflare.com/preview/359/797/253/sunset-yoga-ocean-maree-basse.jpg",
+        imageUrl: "https://wallpapercave.com/dwp1x/wp3157201.jpg",
     },
     {
         id: 2,
-        imageUrl: "https://wallpapercave.com/dwp1x/wp3157195.jpg",
+        imageUrl: "https://wallpapers.com/images/hd/silhouette-yoga-pose-in-beach-r97b14bgquys1sti.jpg",
 
     },
     {
         id: 3,
-        imageUrl: "https://wallpapercave.com/dwp1x/wp3157199.jpg",
+        imageUrl: "https://www.suryanamyoga.com/wp-content/uploads/2021/05/yoga-aperto-1.jpg",
 
     },
     {
         id: 4,
-        imageUrl: "https://wallpapercave.com/dwp1x/wp3157185.jpg",
+        imageUrl: "https://www.pennysaverplus.com/wp-content/uploads/2018/06/yoga.jpg",
 
     }
 ]
