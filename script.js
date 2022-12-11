@@ -45,23 +45,22 @@ window.addEventListener('scroll', function (){
 let imageData = [
     {
         id: 1,
-        imageUrl: "https://cdn.mos.cms.futurecdn.net/aq9CcMN43HnnfnJnpk6gRL-1200-80.jpg.webp",
-        slideTitle: "The \'Phantom Galaxy\'\n"
+        imageUrl: "https://c0.wallpaperflare.com/preview/359/797/253/sunset-yoga-ocean-maree-basse.jpg",
     },
     {
         id: 2,
-        imageUrl: "https://cdn.mos.cms.futurecdn.net/AoWXgnHSxAAPxqymPQMQYL-1200-80.jpg.webp",
-        slideTitle: "Carina Nebula"
+        imageUrl: "https://wallpapercave.com/dwp1x/wp3157195.jpg",
+
     },
     {
         id: 3,
-        imageUrl: "https://cdn.mos.cms.futurecdn.net/jTNKUAeoKHeoaCcHkrKsxC-1200-80.jpg.webp",
-        slideTitle: "The Pillars of Creation\n"
+        imageUrl: "https://wallpapercave.com/dwp1x/wp3157199.jpg",
+
     },
     {
         id: 4,
-        imageUrl: "https://cdn.mos.cms.futurecdn.net/xzJ5BqnKVUdjZFoCMJZ3w9-1200-80.jpeg.webp",
-        slideTitle: "'Bones' of a spiral galaxy\n"
+        imageUrl: "https://wallpapercave.com/dwp1x/wp3157185.jpg",
+
     }
 ]
 

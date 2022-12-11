@@ -573,6 +573,9 @@ li a:hover:after {
         padding: 0;
         flex-direction: column;
     }
+    .title {
+        align-items: center;
+    }
 }
 
 
