@@ -565,13 +565,8 @@ li a:hover:after {
 
     .contact-form {
         max-width: 100%;
-        margin: 0;
-        padding: 0;
     }
 
-    .contact {
-        display: none;
-    }
 
     .container-instructors {
         margin: 0;
