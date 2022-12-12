@@ -167,6 +167,61 @@ li a:hover:after {
     flex-direction: column;
 }
 
+.slider-wrapper {
+    margin-top: 30px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-circle-arrow-left {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.fa-circle-arrow-right {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.dot-wrapper {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50px;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #817d7d;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #ffffff;
+}
+
 .courses .content {
     display: flex;
     justify-content: center;
@@ -188,7 +243,7 @@ li a:hover:after {
 
 .courses .content .box {
     width: 360px;
-    margin: 60px;
+    margin: 30px 60px 40px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
@@ -230,7 +285,7 @@ li a:hover:after {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    margin: 50px 0 50px 0;
+    margin: 30px 0 50px 0;
 }
 
 .instructor-image {
@@ -248,7 +303,6 @@ li a:hover:after {
     padding: 30px;
     align-items: center;
 }
-
 
 .instructors .title h2:before {
     content: "Y";
@@ -400,8 +454,13 @@ li a:hover:after {
     margin: 60px;
 }
 
+.error-text {
+    color: red;
+    display: block;
+}
+
 .copyright {
-    padding: 15px 30px;
+    padding: 20px 30px;
     text-align: center;
 }
 
@@ -411,13 +470,13 @@ li a:hover:after {
 }
 
 .copyright h3 {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .social {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -425,66 +484,7 @@ li a:hover:after {
     margin-left: 5px;
 }
 
-.image {
-    width: 100%;
-    height: 650px;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.arrow {
-    width: 50px;
-    height: 50px;
-    background-color: #ff0157;
-    border-radius: 50%;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.right {
-    right: 10px;
-}
-
-.left {
-    left: 10px;
-}
-
-.slider-wrapper {
-    margin-top: 30px;
-    position: relative;
-}
-
-.dot-wrapper {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 50px;
-}
-
-.dot {
-    height: 13px;
-    width: 13px;
-    background-color: #817d7d;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.active-dot {
-    background-color: #ffffff;
-}
-
-.error-text {
-    color: red;
-    display: block;
-}
 
 @media (max-width: 1070px) {
     .navigation {
@@ -578,18 +578,24 @@ li a:hover:after {
     .text-content .button {
         font-size: 15px;
     }
-    .arrow {
-        display: none;
+
+    .fa-circle-arrow-left {
+        font-size: 25px;
     }
 
+    .fa-circle-arrow-right {
+        font-size: 25px;
+    }
 
     @media (max-width: 460px) {
-        .title h2{
+        .title h2 {
             font-size: 30px;
         }
-        .about .title p{
+
+        .about .title p {
             font-size: 18px;
         }
+
         .instructor-image {
             width: 100%;
             align-items: center;
@@ -630,6 +636,7 @@ li a:hover:after {
         .instructors .title h2 {
             padding-top: 50px;
         }
+
         .image {
             height: 450px;
 

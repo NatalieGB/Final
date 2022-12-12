@@ -5,8 +5,6 @@ window.addEventListener('scroll', function (){
 
 // user review
 
-
-
     fetch("https://reqres.in/api/users?page=1&per_page=4", {
         method: "GET",
     })
