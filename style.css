@@ -402,7 +402,6 @@ li a:hover:after {
 
 footer {
     background: rgba(229, 229, 229, 0.8);
-    display: flex;
 }
 
 .copyright {
