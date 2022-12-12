@@ -30,7 +30,7 @@ p {
     color: white;
     font-size: 35px;
     font-weight: 700;
-    padding-left: 40px;
+    padding-left: 30px;
     font-family: "Acumin Pro", sans-serif;
 }
 
@@ -167,26 +167,26 @@ li a:hover:after {
     flex-direction: column;
 }
 
-.menu .content {
+.courses .content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
-.menu .text h3 {
+.courses .text h3 {
     font-size: 20px;
     text-align: center;
 }
 
-.menu .title h2:before {
+.courses .title h2:before {
     content: "Y";
     color: #ff0157;
 }
 
-.menu .content .box {
+.courses .content .box {
     width: 360px;
     margin: 60px;
     border: 15px solid #fff;
@@ -195,17 +195,17 @@ li a:hover:after {
     cursor: pointer;
 }
 
-.menu .content .box:hover {
+.courses .content .box:hover {
     opacity: 0.8;
 }
 
-.menu .content .box .imbBx {
+.courses .content .box .imbBx {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.menu .content .box .imbBx img {
+.courses .content .box .imbBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -214,7 +214,7 @@ li a:hover:after {
     object-fit: cover;
 }
 
-.menu .content .box .text {
+.courses .content .box .text {
     padding: 15px 0 5px;
 }
 
@@ -245,13 +245,13 @@ li a:hover:after {
 }
 
 .instructors .title h2 {
-    padding: 50px;
+    padding: 30px;
     align-items: center;
 }
 
 
 .instructors .title h2:before {
-    content: "O";
+    content: "Y";
     color: #ff0157;
 }
 
@@ -402,6 +402,7 @@ li a:hover:after {
 
 footer {
     background: rgba(229, 229, 229, 0.8);
+    display: flex;
 }
 
 .copyright {
@@ -564,42 +565,67 @@ footer {
 }
 
 @media (max-width: 760px) {
+    .logo {
+        padding-left: 0px;
+    }
+
     .testimonials .text p {
         line-height: 1.5;
         font-size: 14px;
     }
-}
 
-@media (max-width: 460px) {
-    .instructor-image {
-        width: 100%;
-        align-items: center;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 15px;
+    .text-content h2 {
+        font-size: 40px;
+        margin: 20px 10px 0 10px;
     }
 
-    .contact-form {
-        max-width: 100%;
+    .text-content p {
+
+        font-size: 15px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .text-content .button {
+        font-size: 15px;
     }
 
 
-    .container-instructors {
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
+    @media (max-width: 460px) {
+        .instructor-image {
+            width: 100%;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+        }
 
-    .title {
-        align-items: center;
-    }
-    .menu .content .box {
-        padding: 5px;
-        margin: 5px;
-    }
-    .testimonials .content .box {
-        padding: 30px;
-        margin: 15px 15px 15px;
+        .contact-form {
+            max-width: 100%;
+        }
+
+        .container-instructors {
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .title {
+            align-items: center;
+        }
+
+        .courses .content .box {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .testimonials .content .box {
+            padding: 30px;
+            margin: 15px 15px 15px;
+        }
+
+        .instructors .title h2 {
+            padding-top: 50px;
+        }
     }
 }
 
