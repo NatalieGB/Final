@@ -400,10 +400,6 @@ li a:hover:after {
     margin: 60px;
 }
 
-footer {
-    background: rgba(229, 229, 229, 0.8);
-}
-
 .copyright {
     padding: 15px 30px;
     text-align: center;
@@ -422,7 +418,7 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    margin: 10px;
+    margin-bottom: 15px;
 }
 
 .fa-brands {
@@ -568,11 +564,6 @@ footer {
         padding-left: 0px;
     }
 
-    .testimonials .text p {
-        line-height: 1.5;
-        font-size: 14px;
-    }
-
     .text-content h2 {
         font-size: 40px;
         margin: 20px 10px 0 10px;
@@ -590,12 +581,23 @@ footer {
 
 
     @media (max-width: 460px) {
+        .title h2{
+            font-size: 30px;
+        }
+        .about .title p{
+            font-size: 18px;
+        }
         .instructor-image {
             width: 100%;
             align-items: center;
             margin: 10px;
             padding: 10px;
             border-radius: 15px;
+        }
+
+        .testimonials .text p {
+            line-height: 1.5;
+            font-size: 16px;
         }
 
         .contact-form {
