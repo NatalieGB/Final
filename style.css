@@ -522,7 +522,7 @@ footer {
         position: relative;
         width: 40px;
         height: 40px;
-        background: url("/photos/1024px-Hamburger_icon_white.svg.png");
+        background: url("./photos/1024px-Hamburger_icon_white.svg.png");
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -530,7 +530,7 @@ footer {
     }
 
     .menuToggle.active {
-        background: url("/photos/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png");
+        background: url("./photos/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png");
         background-size: 40px;
         background-repeat: no-repeat;
         background-position: center;
