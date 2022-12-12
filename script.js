@@ -1,3 +1,13 @@
+//hamburger
+function toggleMenu(){
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+
+
+
 window.addEventListener('scroll', function (){
     const header =document.querySelector('.header-wrapper');
     header.classList.toggle('sticky', window.scrollY >0);
@@ -178,11 +188,6 @@ registrationForm.addEventListener('submit', function (event) {
     }
 });
 
-//hamburger
-function toggleMenu(){
-    const menuToggle = document.querySelector('.menuToggle');
-    const navigation = document.querySelector('.navigation');
-    menuToggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-}
+
+
 
