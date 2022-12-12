@@ -578,6 +578,9 @@ li a:hover:after {
     .text-content .button {
         font-size: 15px;
     }
+    .arrow {
+        display: none;
+    }
 
 
     @media (max-width: 460px) {
@@ -626,6 +629,10 @@ li a:hover:after {
 
         .instructors .title h2 {
             padding-top: 50px;
+        }
+        .image {
+            height: 450px;
+
         }
     }
 }
