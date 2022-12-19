@@ -7,9 +7,9 @@
     <meta name="keywords" content="yoga, fitness, meditation, sadhana">
     <meta name="author" content="Nata Baiadze">
     <link rel="icon" href="photos/62459588c3e7fb13059fd07c_icon-mindfullness.svg">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Yoga Corner">
@@ -21,15 +21,17 @@
 <body>
 <header class="header-wrapper" id="header-wrapper">
     <a href="index.html" class="logo">Yoga</a>
-    <div class="menuToggle" onclick="toggleMenu()"></div>
-    <ul class="navigation" id="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#instructors">Instructors</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav class="nav-bar">
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation" id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 <section class="class-bg" id="class-bg">
     <div class="text-content">
@@ -124,7 +126,7 @@
 </section>
 <section class="testimonials" id="testimonials">
     <div class="title">
-        <h2 class=>estimonials</h2>
+        <h2>estimonials</h2>
     </div>
     <div class="content">
         <div class="box">

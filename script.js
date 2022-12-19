@@ -1,5 +1,7 @@
+'use strict'
+
 //hamburger
-function toggleMenu(){
+function toggleMenu() {
     const menuToggle = document.querySelector('.menuToggle');
     const navigation = document.querySelector('.navigation');
     menuToggle.classList.toggle('active');
@@ -7,46 +9,45 @@ function toggleMenu(){
 }
 
 
-
-window.addEventListener('scroll', function (){
-    const header =document.querySelector('.header-wrapper');
-    header.classList.toggle('sticky', window.scrollY >0);
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header-wrapper');
+    header.classList.toggle('sticky', window.scrollY > 0);
 })
 
-// user review
+// fetch request
 
-    fetch("https://reqres.in/api/users?page=1&per_page=4", {
-        method: "GET",
+fetch("https://reqres.in/api/users?page=1&per_page=4", {
+    method: "GET",
+})
+    .then(function (text1) {
+        if (text1.status !== 200) {
+            throw text1.status;
+        }
+        return text1.json();
     })
-        .then(function (text1) {
-            if (text1.status !== 200) {
-                throw text1.status;
-            }
-            return text1.json();
-        })
-        .then(function (text2) {
-            let reviewContainer = document.getElementById("container-instructors");
-            text2.data.forEach((item) => {
-                let div = document.createElement("div");
-                div.classList.add("image-div");
+    .then(function (text2) {
+        let reviewContainer = document.getElementById("container-instructors");
+        text2.data.forEach((item) => {
+            let div = document.createElement("div");
+            div.classList.add("image-div");
 
-                let avatarDiv = document.createElement("div");
-                let img = document.createElement("img");
-                img.classList.add("instructor-image");
-                img.src = item.avatar;
-                img.alt = "avatar";
-                avatarDiv.appendChild(img);
+            let avatarDiv = document.createElement("div");
+            let img = document.createElement("img");
+            img.classList.add("instructor-image");
+            img.src = item.avatar;
+            img.alt = "avatar";
+            avatarDiv.appendChild(img);
 
-                let name = document.createElement("h2");
-                name.innerText = item.first_name + " " + item.last_name;
+            let name = document.createElement("h2");
+            name.innerText = item.first_name + " " + item.last_name;
 
 
-                div.appendChild(avatarDiv);
-                div.appendChild(name);
+            div.appendChild(avatarDiv);
+            div.appendChild(name);
 
-                reviewContainer.appendChild(div);
-            });
+            reviewContainer.appendChild(div);
         });
+    });
 
 //slider
 
@@ -82,6 +83,7 @@ function createDivSlides() {
     divSlide.classList.add('slide');
     return divSlide;
 }
+
 function createImgTag(item) {
     const imageTag = document.createElement('img');
     imageTag.setAttribute('src', item.imageUrl);
@@ -89,30 +91,33 @@ function createImgTag(item) {
     imageTag.classList.add('image');
     return imageTag;
 }
-function createDots(){
+
+function createDots() {
     const dotWrapper = document.createElement('div');
     dotWrapper.classList.add('dot-wrapper');
-    imageData.forEach(element =>{
+    imageData.forEach(element => {
         let dot = document.createElement('div');
         dot.classList.add('dot');
         let dotId = element.id;
-        if (dotId===sliderIndex + 1){
+        if (dotId === sliderIndex + 1) {
             dot.classList.add('active-dot');
-        }else {
+        } else {
             dot.classList.remove('active-dot');
         }
         dotWrapper.appendChild(dot);
-        function dotChange(){
-            sliderIndex = dotId-1;
+
+        function dotChange() {
+            sliderIndex = dotId - 1;
             slide();
         }
+
         dot.addEventListener('click', dotChange);
     })
     return dotWrapper;
 }
 
-function slide(){
-    sliderContent.innerHTML=" ";
+function slide() {
+    sliderContent.innerHTML = " ";
     const slideItem = createDivSlides(imageData[sliderIndex]);
     const imgTag = createImgTag(imageData[sliderIndex]);
     const dotElement = createDots(imageData[sliderIndex]);
@@ -120,9 +125,10 @@ function slide(){
     sliderContent.appendChild(slideItem);
     sliderContent.appendChild(dotElement);
 }
-function arrowLeftClick(){
-    if (sliderIndex==0){
-        sliderIndex=imageData.length-1;
+
+function arrowLeftClick() {
+    if (sliderIndex == 0) {
+        sliderIndex = imageData.length - 1;
         slide();
         return;
     }
@@ -130,9 +136,9 @@ function arrowLeftClick(){
     slide();
 }
 
-function arrowRightClick(){
-    if (sliderIndex==imageData.length-1){
-        sliderIndex= 0;
+function arrowRightClick() {
+    if (sliderIndex == imageData.length - 1) {
+        sliderIndex = 0;
         slide();
         return;
     }
@@ -145,7 +151,9 @@ arrowLeft.addEventListener('click', arrowLeftClick);
 
 arrowRight.addEventListener('click', arrowRightClick);
 
-setInterval(()=>{arrowRightClick()}, 3000);
+setInterval(() => {
+    arrowRightClick()
+}, 3000);
 slide();
 
 //validation form
@@ -171,10 +179,10 @@ registrationForm.addEventListener('submit', function (event) {
     }
 
     let textArea = document.getElementById('Text').value;
-    if (textArea==="" || textArea.length<10) {
+    if (textArea === "" || textArea.length < 10) {
         errors.text = 'You have to enter message (min. 20 characters)';
     }
-    document.querySelectorAll('.error-text').forEach(item =>{
+    document.querySelectorAll('.error-text').forEach(item => {
         item.textContent = " ";
     })
     for (let key in errors) {
@@ -183,11 +191,10 @@ registrationForm.addEventListener('submit', function (event) {
             errorText.innerText = errors[key];
         }
     }
-    if (Object.keys(errors).length===0) {
+    if (Object.keys(errors).length === 0) {
         registrationForm.submit();
     }
 });
-
 
 
 

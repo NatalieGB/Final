@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 h2, h3, h4, label {
     font-family: "Acumin Pro", sans-serif;
 }
@@ -14,15 +21,34 @@ p {
     width: 100%;
     padding: 35px;
     z-index: 10000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
+}
+
+.nav-bar {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .sticky {
     background: rgb(255, 255, 255);
     padding: 35px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -45,7 +71,11 @@ p {
 
 .navigation {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 40px;
 }
@@ -70,6 +100,8 @@ li a:after {
     width: 0;
     left: 0;
     bottom: -10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -91,13 +123,20 @@ li a:hover:after {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-image: url("https://wallpapercrafter.com/sizes/3840x2160/257361-a-person-does-yoga-at-a-cave-mouth-as-the-sun-rise.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -128,6 +167,8 @@ li a:hover:after {
     padding: 10px 30px;
     margin-top: 30px;
     letter-spacing: 1px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     border-radius: 10px;
     font-weight: 500;
@@ -161,9 +202,18 @@ li a:hover:after {
 
 .title {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -175,6 +225,7 @@ li a:hover:after {
 .image {
     width: 100%;
     height: 650px;
+    -o-object-fit: cover;
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,6 +234,8 @@ li a:hover:after {
 
 .fa-circle-arrow-left {
     position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
     left: 10px;
@@ -193,6 +246,8 @@ li a:hover:after {
 
 .fa-circle-arrow-right {
     position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
     right: 10px;
@@ -202,9 +257,13 @@ li a:hover:after {
 }
 
 .dot-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
     bottom: 50px;
 }
@@ -223,10 +282,20 @@ li a:hover:after {
 }
 
 .courses .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -245,6 +314,7 @@ li a:hover:after {
     width: 360px;
     margin: 30px 60px 40px;
     border: 15px solid #fff;
+    -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     cursor: pointer;
@@ -266,6 +336,7 @@ li a:hover:after {
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -280,10 +351,19 @@ li a:hover:after {
 }
 
 .container-instructors {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: 30px 0 50px 0;
 }
@@ -301,6 +381,8 @@ li a:hover:after {
 
 .instructors .title h2 {
     padding: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -310,9 +392,17 @@ li a:hover:after {
 }
 
 .instructors {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -330,9 +420,17 @@ li a:hover:after {
 }
 
 .testimonials .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: 30px 0 30px 0;
 }
@@ -348,12 +446,23 @@ li a:hover:after {
     margin: 20px 50px 100px;
     padding: 40px;
     background: #fff;
+    -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border-radius: 5px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -372,6 +481,7 @@ li a:hover:after {
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -400,6 +510,7 @@ li a:hover:after {
 .contact-form {
     padding: 75px 50px;
     background: rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
     max-width: 100%;
@@ -474,7 +585,11 @@ li a:hover:after {
 }
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-size: 25px;
     margin-bottom: 15px;
@@ -483,7 +598,6 @@ li a:hover:after {
 .fa-brands {
     margin-left: 5px;
 }
-
 
 
 @media (max-width: 1070px) {
@@ -497,17 +611,26 @@ li a:hover:after {
         left: 0;
         width: 100%;
         height: 35%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: white;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
         align-items: end;
+        -webkit-transition: 0.8s all;
+        -o-transition: 0.8s all;
         transition: 0.8s all;
     }
 
     .navigation li {
         margin-right: 30px;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin-bottom: 12px;
+        margin-top: 13px;
     }
 
     .navigation li a {
@@ -518,7 +641,7 @@ li a:hover:after {
         position: relative;
         width: 40px;
         height: 40px;
-        background: url("./photos/1024px-Hamburger_icon_white.svg.png");
+        background: url("../photos/1024px-Hamburger_icon_white.svg.png");
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -526,17 +649,21 @@ li a:hover:after {
     }
 
     .menuToggle.active {
-        background: url("./photos/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png");
+        background: url("../photos/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png");
         background-size: 40px;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     .sticky .menuToggle {
+        -webkit-filter: invert(1);
         filter: invert(1);
     }
 
     .instructors {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
@@ -598,6 +725,8 @@ li a:hover:after {
 
         .instructor-image {
             width: 100%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin: 10px;
             padding: 10px;
@@ -616,10 +745,15 @@ li a:hover:after {
         .container-instructors {
             margin: 0;
             padding: 0;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
         }
 
         .title {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
         }
 
@@ -638,13 +772,11 @@ li a:hover:after {
         }
 
         .image {
-            height: 450px;
+            height: 420px;
 
         }
     }
 }
-
-
 
 
 
